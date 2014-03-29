@@ -4,7 +4,7 @@
   <title><![CDATA[Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-03-29T10:48:47+08:00</updated>
+  <updated>2014-03-29T11:27:28+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -38,6 +38,25 @@ int main()
 <p>好奇怪，没法使用语法高亮。一旦使用了，<code>pygments</code>就跑步过去，<code>rake generate</code>就生成不了。</p>
 
 <p>用的是 Python 3.4，难道是因为版本太高了？</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt; </span>
+</span><span class='line'><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>验证了，把python版本降到2.7.6就可以正常generate了。</p>
+
+<p>WTF!</p>
 ]]></content>
   </entry>
   
