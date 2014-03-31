@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-03-31T11:09:48+08:00</updated>
+  <updated>2014-03-31T11:12:13+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[第一篇Octopress日志]]></title>
-    <link href="http://cnDelbert.github.io/2014/03/29/first-octopress-post/"/>
+    <link href="http://cnDelbert.github.io/blog/2014/03/29/first-octopress-post/"/>
     <updated>2014-03-29T09:32:59+08:00</updated>
-    <id>http://cnDelbert.github.io/2014/03/29/first-octopress-post</id>
+    <id>http://cnDelbert.github.io/blog/2014/03/29/first-octopress-post</id>
     <content type="html"><![CDATA[<h3>你好，世界！</h3>
 
 <h3>Hello, World!</h3>

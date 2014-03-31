@@ -4,7 +4,7 @@
   <title><![CDATA[Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-03-31T11:09:48+08:00</updated>
+  <updated>2014-03-31T11:12:13+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Bullet Character Demo Assert]]></title>
-    <link href="http://cnDelbert.github.io/2014/03/31/bullet-debug-assert/"/>
+    <link href="http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert/"/>
     <updated>2014-03-31T11:04:09+08:00</updated>
-    <id>http://cnDelbert.github.io/2014/03/31/bullet-debug-assert</id>
+    <id>http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert</id>
     <content type="html"><![CDATA[<p>Bullet 的默认 Demo <code>CharacterDemo</code> 竟然也会出现 <code>fuzzyZero</code> 这样的 assert ，无奈了。</p>
 
 <p>之前只是看 Demo 的源码，用 Release 版本的例子给老师看，反正我怎么写都会出发 breakpoint ，我以为是我自己代码的问题。结果昨天一运行官方的，发现根本不是我的问题，官方的例子都是这样的啊。</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[第一篇Octopress日志]]></title>
-    <link href="http://cnDelbert.github.io/2014/03/29/first-octopress-post/"/>
+    <link href="http://cnDelbert.github.io/blog/2014/03/29/first-octopress-post/"/>
     <updated>2014-03-29T09:32:59+08:00</updated>
-    <id>http://cnDelbert.github.io/2014/03/29/first-octopress-post</id>
+    <id>http://cnDelbert.github.io/blog/2014/03/29/first-octopress-post</id>
     <content type="html"><![CDATA[<h3>你好，世界！</h3>
 
 <h3>Hello, World!</h3>

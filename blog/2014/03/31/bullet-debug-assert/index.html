@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>第一篇Octopress日志 - Delbert's Octopress Blog</title>
+  <title>Bullet Character Demo Assert - Delbert's Octopress Blog</title>
   <meta name="author" content="Delbert">
 
   
-  <meta name="description" content="你好，世界！ Hello, World! 哈哈，有点小 Geek 了哈。 代码示例： cpp
-#include &lt;stdio.h&gt; int main() { printf("Hello world!"); return 0; } 好奇怪，没法使用语法高亮。一旦使用了， &hellip;">
+  <meta name="description" content="Bullet 的默认 Demo CharacterDemo 竟然也会出现 fuzzyZero 这样的 assert ，无奈了。 之前只是看 Demo 的源码，用 Release 版本的例子给老师看，反正我怎么写都会出发 breakpoint ，我以为是我自己代码的问题。结果昨天一运行官方的， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cnDelbert.github.io/2014/03/29/first-octopress-post">
+  <link rel="canonical" href="http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Delbert's Octopress Blog" type="application/atom+xml">
@@ -69,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">第一篇Octopress日志</h1>
+      <h1 class="entry-title">Bullet Character Demo Assert</h1>
     
     
       <p class="meta">
@@ -85,54 +84,18 @@
   
 
 
-<time datetime="2014-03-29T09:32:59+08:00" pubdate data-updated="true">2014-Mar-29, 09:32:59, Saturday</time>
+<time datetime="2014-03-31T11:04:09+08:00" pubdate data-updated="true">2014-Mar-31, 11:04:09, Monday</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h3>你好，世界！</h3>
+<div class="entry-content"><p>Bullet 的默认 Demo <code>CharacterDemo</code> 竟然也会出现 <code>fuzzyZero</code> 这样的 assert ，无奈了。</p>
 
-<h3>Hello, World!</h3>
+<p>之前只是看 Demo 的源码，用 Release 版本的例子给老师看，反正我怎么写都会出发 breakpoint ，我以为是我自己代码的问题。结果昨天一运行官方的，发现根本不是我的问题，官方的例子都是这样的啊。</p>
 
-<p>哈哈，有点小 Geek 了哈。</p>
-
-<blockquote><p>代码示例：</p></blockquote>
-
-<pre><code>cpp
-#include &lt;stdio.h&gt; 
-int main() 
-{ 
-    printf("Hello world!"); 
-    return 0; 
-} 
-</code></pre>
-
-<p>好奇怪，没法使用语法高亮。一旦使用了，<code>pygments</code>就跑不过去，<code>rake generate</code>就生成不了。</p>
-
-<p>用的是 Python 3.4，难道是因为版本太高了？</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt; </span>
-</span><span class='line'><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>验证了，把python版本降到2.7.6就可以正常generate了。</p>
-
-<p>WTF!</p>
-
-<p>UPDATE: 怎么感觉 ubuntu 比 windows 更难弄呢？ bundle 无法安装，ruby 源有问题，网络线路……唉……</p>
+<p>算了，以后编译成 Release 版本吧，大不了不 debug 了…… （出了错误谁负责啊！）</p>
 </div>
 
 
@@ -155,12 +118,12 @@ int main()
   
 
 
-<time datetime="2014-03-29T09:32:59+08:00" pubdate data-updated="true">2014-Mar-29, 09:32:59, Saturday</time>
+<time datetime="2014-03-31T11:04:09+08:00" pubdate data-updated="true">2014-Mar-31, 11:04:09, Monday</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+    <a class='category' href='/blog/categories/bullet/'>Bullet</a>
   
 </span>
 
@@ -176,8 +139,8 @@ int main()
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/03/29/first-octopress-post/" title="Previous Post: 第一篇Octopress日志">&laquo; 第一篇Octopress日志</a>
       
-        <a class="basic-alignment right" href="/2014/03/31/bullet-debug-assert/" title="Next Post: Bullet Character Demo Assert">Bullet Character Demo Assert &raquo;</a>
       
     </p>
   </footer>
@@ -198,11 +161,11 @@ int main()
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/2014/03/31/bullet-debug-assert/">Bullet Character Demo Assert</a>
+        <a href="/blog/2014/03/31/bullet-debug-assert/">Bullet Character Demo Assert</a>
       </li>
     
       <li class="post">
-        <a href="/2014/03/29/first-octopress-post/">第一篇Octopress日志</a>
+        <a href="/blog/2014/03/29/first-octopress-post/">第一篇Octopress日志</a>
       </li>
     
   </ul>
@@ -231,8 +194,8 @@ int main()
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://cnDelbert.github.io/2014/03/29/first-octopress-post/';
-        var disqus_url = 'http://cnDelbert.github.io/2014/03/29/first-octopress-post/';
+        var disqus_identifier = 'http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert/';
+        var disqus_url = 'http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert/';
         var disqus_script = 'embed.js';
       
     (function () {
