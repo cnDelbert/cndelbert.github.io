@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | Delbert's Octopress Blog]]></title>
+  <link href="http://cnDelbert.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://cnDelbert.github.io/"/>
+  <updated>2014-04-01T16:17:37+08:00</updated>
+  <id>http://cnDelbert.github.io/</id>
+  <author>
+    <name><![CDATA[Delbert]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ex 0: 准备工作]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/03/31/ex00/"/>
+    <updated>2014-03-31T22:15:50+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/03/31/ex00</id>
+    <content type="html"><![CDATA[<p>由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。</p>
+
+<!--more-->
+
+
+<h4>Windows 7 X64</h4>
+
+<pre><code>E:\SourceCode\GitHub&gt; ruby -v
+ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
+</code></pre>
+
+<p>我安装的是 1.9.3 版本的。</p>
+
+<p>同样，也可以运行 Ruby 命令行，可能 PowerShell 属于 bash 吧，退出方式是 Linux 的 <code>Ctrl+D</code>，而不是 <code>Ctrl+Z</code>。
+```</p>
+
+<pre><code>E:\SourceCode\GitHub&gt; irb
+irb(main):001:0&gt; ^Z
+=&gt; nil
+irb(main):002:0* ^C
+irb(main):002:0&gt;
+E:\SourceCode\GitHub&gt; 
+</code></pre>
+
+<p>```
+已经安装了 Vim 的，Notepad++ 也已经安装了 Vim 插件，不过还是用不惯。</p>
+
+<p>暑假就可以用 Mac OS 了，期待我的更新吧。</p>
+]]></content>
+  </entry>
+  
+</feed>

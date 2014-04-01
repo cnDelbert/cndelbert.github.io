@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-03-31T11:12:13+08:00</updated>
+  <updated>2014-04-01T16:17:37+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Failure on 'Ruby dk.rb Init']]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/01/cannot-init-dk-dot-rb/"/>
+    <updated>2014-04-01T16:09:29+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/01/cannot-init-dk-dot-rb</id>
+    <content type="html"><![CDATA[<p>想在 Windows 下重新安装 Ruby，结果在执行 <code>ruby dk.rb init</code> 的命令时就出现了错误：</p>
+
+<!--more-->
+
+
+<p><code>``
+ruby dk.rb init
+[INFO] found RubyInstaller v1.9.3 at C:/Ruby193
+C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:173:in</code>tr': invalid byte sequence in UTF-8 (ArgumentError)</p>
+
+<pre><code>    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:173:in `initialize'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:231:in `exception'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:231:in `raise'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:231:in `check'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:277:in `EnumKey'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:551:in `each_key'
+    from dk.rb:119:in `block (2 levels) in scan_for'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:389:in `open'
+    from C:/Ruby193/lib/ruby/1.9.1/win32/registry.rb:496:in `open'
+    from dk.rb:118:in `block in scan_for'
+    from dk.rb:116:in `each'
+    from dk.rb:116:in `scan_for'
+    from dk.rb:138:in `block in installed_rubies'
+    from dk.rb:138:in `collect'
+    from dk.rb:138:in `installed_rubies'
+    from dk.rb:146:in `init'
+    from dk.rb:313:in `run'
+    from dk.rb:332:in `&lt;main&gt;'
+</code></pre>
+
+<p>```</p>
+
+<p>将环境变量中的 <code>LANG</code> 和 <code>LC_ALL</code> 去掉后，重新开启一个命令行执行即可。</p>
+
+<p>有必要的话，安装完 DevKit 再将环境变量添加回去。</p>
+
+<p><em>Delbert</em> 自己摸索了一下午试出来的……</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第一篇Octopress日志]]></title>

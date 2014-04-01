@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Bullet Character Demo Assert - Delbert's Octopress Blog</title>
+  <title>Ex 0: 准备工作 - Delbert's Octopress Blog</title>
   <meta name="author" content="Delbert">
 
   
-  <meta name="description" content="Bullet 的默认 Demo CharacterDemo 竟然也会出现 fuzzyZero 这样的 assert ，无奈了。 之前只是看 Demo 的源码，用 Release 版本的例子给老师看，反正我怎么写都会出发 breakpoint ，我以为是我自己代码的问题。结果昨天一运行官方的， &hellip;">
+  <meta name="description" content="由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。 Windows 7 X64 E:\SourceCode\GitHub&gt; ruby -v
+ruby 1.9.3p429 (2013-05-15) [i386-mingw32 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert">
+  <link rel="canonical" href="http://cnDelbert.github.io/blog/2014/03/31/ex00">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Delbert's Octopress Blog" type="application/atom+xml">
@@ -68,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">Bullet Character Demo Assert</h1>
+      <h1 class="entry-title">Ex 0: 准备工作</h1>
     
     
       <p class="meta">
@@ -84,18 +85,45 @@
   
 
 
-<time datetime="2014-03-31T11:04:09+08:00" pubdate data-updated="true">2014-Mar-31, 11:04:09, Monday</time>
+<time datetime="2014-03-31T22:15:50+08:00" pubdate data-updated="true">2014-Mar-31, 22:15:50, Monday</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Bullet 的默认 Demo <code>CharacterDemo</code> 竟然也会出现 <code>fuzzyZero</code> 这样的 assert ，无奈了。</p>
+<div class="entry-content"><p>由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。</p>
 
-<p>之前只是看 Demo 的源码，用 Release 版本的例子给老师看，反正我怎么写都会出发 breakpoint ，我以为是我自己代码的问题。结果昨天一运行官方的，发现根本不是我的问题，官方的例子都是这样的啊。</p>
+<!--more-->
 
-<p>算了，以后编译成 Release 版本吧，大不了不 debug 了…… （出了错误谁负责啊！）</p>
+
+<h4>Windows 7 X64</h4>
+
+<pre><code>E:\SourceCode\GitHub&gt; ruby -v
+ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
+</code></pre>
+
+<p>我安装的是 1.9.3 版本的。</p>
+
+<p>同样，也可以运行 Ruby 命令行，可能 PowerShell 属于 bash 吧，退出方式是 Linux 的 <code>Ctrl+D</code>，而不是 <code>Ctrl+Z</code>。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>E:\SourceCode\GitHub&gt; irb
+</span><span class='line'>irb(main):001:0&gt; ^Z
+</span><span class='line'>=&gt; nil
+</span><span class='line'>irb(main):002:0* ^C
+</span><span class='line'>irb(main):002:0&gt;
+</span><span class='line'>E:\SourceCode\GitHub&gt; </span></code></pre></td></tr></table></div></figure>
+
+
+<p>已经安装了 Vim 的，Notepad++ 也已经安装了 Vim 插件，不过还是用不惯。</p>
+
+<p>暑假就可以用 Mac OS 了，期待我的更新吧。</p>
 </div>
 
 
@@ -118,12 +146,12 @@
   
 
 
-<time datetime="2014-03-31T11:04:09+08:00" pubdate data-updated="true">2014-Mar-31, 11:04:09, Monday</time>
+<time datetime="2014-03-31T22:15:50+08:00" pubdate data-updated="true">2014-Mar-31, 22:15:50, Monday</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/bullet/'>Bullet</a>
+    <a class='category' href='/blog/categories/ruby/'>Ruby</a>
   
 </span>
 
@@ -139,10 +167,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/03/29/first-octopress-post/" title="Previous Post: 第一篇Octopress日志">&laquo; 第一篇Octopress日志</a>
+        <a class="basic-alignment left" href="/blog/2014/03/31/bullet-debug-assert/" title="Previous Post: Bullet Character Demo Assert">&laquo; Bullet Character Demo Assert</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/03/31/ex00/" title="Next Post: Ex 0: 准备工作">Ex 0: 准备工作 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/04/01/cannot-init-dk-dot-rb/" title="Next Post: Failure on 'ruby dk.rb init'">Failure on 'ruby dk.rb init' &raquo;</a>
       
     </p>
   </footer>
@@ -204,8 +232,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert/';
-        var disqus_url = 'http://cnDelbert.github.io/blog/2014/03/31/bullet-debug-assert/';
+        var disqus_identifier = 'http://cnDelbert.github.io/blog/2014/03/31/ex00/';
+        var disqus_url = 'http://cnDelbert.github.io/blog/2014/03/31/ex00/';
         var disqus_script = 'embed.js';
       
     (function () {
