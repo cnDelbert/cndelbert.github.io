@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Google | Delbert's Octopress Blog]]></title>
+  <link href="http://cnDelbert.github.io/blog/categories/google/atom.xml" rel="self"/>
+  <link href="http://cnDelbert.github.io/"/>
+  <updated>2014-04-08T15:14:19+08:00</updated>
+  <id>http://cnDelbert.github.io/</id>
+  <author>
+    <name><![CDATA[Delbert]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[参数方法启用 Chrome App Launcher]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/08/chrome-app-launcher/"/>
+    <updated>2014-04-08T14:44:31+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/08/chrome-app-launcher</id>
+    <content type="html"><![CDATA[<p>昨天启用 Google Knot 的时候在我的本子上给安装了个 Chrome App Launcher，感觉很好用。</p>
+
+<!--more-->
+
+
+<p>因为在实验室用台式机比较多，想在那台 Windows 8 的上面也启用 App Launcher。结果用 Chrome 到了安装的页面，再点击就直接是空白页了。找到 Softnic 的地址，结果也是直接链接到 Google。</p>
+
+<p>算了，本来不想用了，结果逛到<a href="//appinn.com">小众软件</a>，发现某篇文章里面也提到了这个东东，评论中有一句话真心大亮：</p>
+
+<blockquote><p>不就是 Chrome 加上了 <code>--show-app-list</code> 启动参数吗？</p></blockquote>
+
+<p>哈哈哈，原来 Chrome App Launcher 这么简单就搞定了。</p>
+
+<p>右键原来的那个 Chrome 的快捷方式，加上 <code>--show-app-list</code> 参数，确定即可。</p>
+
+<p>附送参数一枚：</p>
+
+<p>隐身模式 <code>--incoginto</code> ，快捷键 <code>Ctrl + Shift + N</code>。</p>
+
+<p><em>本方法仅在 Windows 7 / Window 8 操作系统下测试通过</em></p>
+]]></content>
+  </entry>
+  
+</feed>
