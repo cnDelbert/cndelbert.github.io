@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-08T16:08:27+08:00</updated>
+  <updated>2014-04-08T16:39:21+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -49,6 +49,8 @@ Multi-Line Comments
 
 <h2>控制流</h2>
 
+<h3>if/else</h3>
+
 <p><code>ruby
 if true
   # do something
@@ -58,6 +60,8 @@ else
   # others
 end
 </code></p>
+
+<h3>unless/else</h3>
 
 <p><code>ruby
 unless false
@@ -71,16 +75,53 @@ end
 
 <h2>循环</h2>
 
+<h3>while</h3>
+
 <p><code>ruby
 while true
   # do something
 end
 </code></p>
 
+<h3>until</h3>
+
 <p><code>ruby
 until false
   # do something
 end
+</code></p>
+
+<h3>loop</h3>
+
+<p><code>ruby
+loop do
+  next if true # equals continus
+  # do something
+  break if true
+end
+</code></p>
+
+<h3>.each</h3>
+
+<p>Multi-Line</p>
+
+<p><code>ruby
+array = [1, 2, 3]
+array.each do |x|
+  # do something
+end
+</code></p>
+
+<p>Single-Line</p>
+
+<p><code>ruby
+object.each { |item| # Do something }
+</code></p>
+
+<h3>.times</h3>
+
+<p><code>ruby
+3.times{print "Delbert"} # print "Delbert" out for 3 times{print
 </code></p>
 
 <h2>TBD</h2>
