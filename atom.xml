@@ -4,7 +4,7 @@
   <title><![CDATA[Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-08T15:14:19+08:00</updated>
+  <updated>2014-04-08T16:08:27+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -14,11 +14,110 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Ruby Note Review]]></title>
+    <title type="html"><![CDATA[Ruby 补充笔记 1]]></title>
     <link href="http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review/"/>
     <updated>2014-04-08T14:53:48+08:00</updated>
     <id>http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>完成了 <em>Learn Ruby The Hard Way</em> ，但是在 Codecademy 上面的课程还是没有完成。今天抽空从头复习了一下，发现了不少在 lrthw 中没有提到的地方。</p>
+
+<!--more-->
+
+
+<h2>字符串方法</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">.</span><span class="n">length</span>
+</span><span class='line'><span class="o">.</span><span class="n">reverse</span>
+</span><span class='line'><span class="o">.</span><span class="n">upcase</span>
+</span><span class='line'><span class="o">.</span><span class="n">downcase</span>
+</span><span class='line'><span class="o">.</span><span class="n">capitalize</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/s/</span><span class="p">,</span><span class="s2">&quot;th&quot;</span><span class="p">)</span> <span class="c1"># replace s with th, while gsub is short for **g**lobal **sub**stitution. </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>多行注释</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="cm">=begin</span>
+</span><span class='line'><span class="cm">注释</span>
+</span><span class='line'><span class="cm">Multi-Line Comments</span>
+</span><span class='line'><span class="cm">=end</span>
+</span><span class='line'><span class="c1"># Single-Line Comments</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>控制流</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="kp">true</span>
+</span><span class='line'>  <span class="c1"># do something</span>
+</span><span class='line'><span class="k">elsif</span>
+</span><span class='line'>  <span class="c1"># do something else</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="c1"># others</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">unless</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="c1"># do something</span>
+</span><span class='line'><span class="k">elsif</span>
+</span><span class='line'>  <span class="c1"># do something else</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="c1"># others</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>循环</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">while</span> <span class="kp">true</span>
+</span><span class='line'>  <span class="c1"># do something</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">until</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="c1"># do something</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>TBD</h2>
 ]]></content>
   </entry>
   

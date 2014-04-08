@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-08T15:14:19+08:00</updated>
+  <updated>2014-04-08T16:08:27+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 补充笔记 1]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review/"/>
+    <updated>2014-04-08T14:53:48+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review</id>
+    <content type="html"><![CDATA[<p>完成了 <em>Learn Ruby The Hard Way</em> ，但是在 Codecademy 上面的课程还是没有完成。今天抽空从头复习了一下，发现了不少在 lrthw 中没有提到的地方。</p>
+
+<!--more-->
+
+
+<h2>字符串方法</h2>
+
+<p>``` ruby
+.length
+.reverse
+.upcase
+.downcase
+.capitalize</p>
+
+<p>.gsub!(/s/,&ldquo;th&rdquo;) # replace s with th, while gsub is short for <strong>g</strong>lobal <strong>sub</strong>stitution.
+```</p>
+
+<h2>多行注释</h2>
+
+<p>``` ruby
+=begin
+注释
+Multi-Line Comments
+=end</p>
+
+<h1>Single-Line Comments</h1>
+
+<p>```</p>
+
+<h2>控制流</h2>
+
+<p><code>ruby
+if true
+  # do something
+elsif
+  # do something else
+else
+  # others
+end
+</code></p>
+
+<p><code>ruby
+unless false
+  # do something
+elsif
+  # do something else
+else
+  # others
+end
+</code></p>
+
+<h2>循环</h2>
+
+<p><code>ruby
+while true
+  # do something
+end
+</code></p>
+
+<p><code>ruby
+until false
+  # do something
+end
+</code></p>
+
+<h2>TBD</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ex 0: 准备工作]]></title>
