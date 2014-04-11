@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Coding | Delbert's Octopress Blog]]></title>
+  <link href="http://cnDelbert.github.io/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://cnDelbert.github.io/"/>
+  <updated>2014-04-11T21:51:01+08:00</updated>
+  <id>http://cnDelbert.github.io/</id>
+  <author>
+    <name><![CDATA[Delbert]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[XML 相关的一点内容]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/11/xml-relative/"/>
+    <updated>2014-04-11T20:11:01+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/11/xml-relative</id>
+    <content type="html"><![CDATA[<p>想用 XML 来保存一点数据，因此在这边来作个笔记。</p>
+
+<!--more-->
+
+
+<ul>
+<li>XML 所有元素都<strong>必须</strong>有关闭标签。</li>
+</ul>
+
+
+<p>XML 声明不属于 XML 的部分，因此声明是没有关闭标签的。</p>
+
+<p><code>xml
+&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+</code>
+&ndash; XML 标签是大小写敏感的。
+&ndash; XML 标签<strong>必须</strong>正确嵌套。
+&ndash; XML文档必须有根元素。
+&ndash; XML 的属性<strong>必须</strong>加双引号。
+&ndash; <code>&lt;</code> 等要写成<code>&amp;lt;</code>。
+&ndash; XML 中的空格会被保留，而不是像 HTML 一样合并为一个。</p>
+
+<p>XML 的命名应该遵循一些规则</p>
+
+<ul>
+<li>不能以标点或数字开头</li>
+<li>不能以xml/XML/Xml等开头</li>
+<li>不能包含空格</li>
+<li>尽量避免使用<code>.</code> <code>-</code> <code>:</code></li>
+<li>可是使用非英语字母，但是不建议使用。</li>
+</ul>
+
+
+<p>尽量使用元素，而要避免使用属性。属性仅仅用来描述与数据无关的信息，而用元素来处理信息。</p>
+
+<p>如果 XML 文件有错误，程序就会停止执行。</p>
+]]></content>
+  </entry>
+  
+</feed>

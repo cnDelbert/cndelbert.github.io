@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-08T16:39:21+08:00</updated>
+  <updated>2014-04-11T21:51:01+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 补充笔记 2]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review-2/"/>
+    <updated>2014-04-08T21:11:59+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review-2</id>
+    <content type="html"><![CDATA[<p>继续</p>
+
+<!--more-->
+
+
+<p>Ruby 中有以感叹号和问号结尾的方法。</p>
+
+<p>问号被用于判断返回 Boolean 是否为真的方法，如 <code>Array.empty?</code>。<br>
+叹号用来表示用到的方法要多加小心。一般不带叹号的方法返回调用该方法的一个拷贝，而带感叹号的则会修改原来的对象。</p>
+
+<p>可以通过 <code>Hash.new</code> 方法来建立新的空的 hash。</p>
+
+<p><code>.to_sym</code> 和 <code>.intern</code> 作用一样，都是讲字符串转换为 Symbol。</p>
+
+<p>Hash 中 key 如果本身是一个单词，可以直接用 <code>key: value</code> 的形式，如果是多个单词的话，就要 <code>:"key word" =&gt; value</code> 了。貌似是这样的。</p>
+
+<p>lrthw 中从来没有提到过 The Zen of Ruby。 Ruby 是一种很随意的语言，比如</p>
+
+<p><code>ruby
+puts "Delbert" if true
+</code></p>
+
+<p>和英语的读法差不多的杨泽，语法相当随意。</p>
+
+<p>加一个<code>@</code>是实例变量，两个@ <code>@@</code>是类变量，加<code>$</code>的是全局变量。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby 补充笔记 1]]></title>
@@ -123,44 +156,6 @@ object.each { |item| # Do something }
 <p><code>ruby
 3.times{print "Delbert"} # print "Delbert" out for 3 times{print
 </code></p>
-
-<h2>TBD</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ex 0: 准备工作]]></title>
-    <link href="http://cnDelbert.github.io/blog/2014/03/31/ex00/"/>
-    <updated>2014-03-31T22:15:50+08:00</updated>
-    <id>http://cnDelbert.github.io/blog/2014/03/31/ex00</id>
-    <content type="html"><![CDATA[<p>由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。</p>
-
-<!--more-->
-
-
-<h4>Windows 7 X64</h4>
-
-<pre><code>E:\SourceCode\GitHub&gt; ruby -v
-ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
-</code></pre>
-
-<p>我安装的是 1.9.3 版本的。</p>
-
-<p>同样，也可以运行 Ruby 命令行，可能 PowerShell 属于 bash 吧，退出方式是 Linux 的 <code>Ctrl+D</code>，而不是 <code>Ctrl+Z</code>。
-```</p>
-
-<pre><code>E:\SourceCode\GitHub&gt; irb
-irb(main):001:0&gt; ^Z
-=&gt; nil
-irb(main):002:0* ^C
-irb(main):002:0&gt;
-E:\SourceCode\GitHub&gt; 
-</code></pre>
-
-<p>```
-已经安装了 Vim 的，Notepad++ 也已经安装了 Vim 插件，不过还是用不惯。</p>
-
-<p>暑假就可以用 Mac OS 了，期待我的更新吧。</p>
 ]]></content>
   </entry>
   

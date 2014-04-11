@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ex 0: 准备工作 - Delbert's Octopress Blog</title>
+  <title>XML 相关的一点内容 - Delbert's Octopress Blog</title>
   <meta name="author" content="Delbert">
 
   
-  <meta name="description" content="由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。 Windows 7 X64 E:\SourceCode\GitHub&gt; ruby -v
-ruby 1.9.3p429 (2013-05-15) [i386-mingw32 &hellip;">
+  <meta name="description" content="想用 XML 来保存一点数据，因此在这边来作个笔记。 XML 所有元素都必须有关闭标签。 XML 声明不属于 XML 的部分，因此声明是没有关闭标签的。 1
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cnDelbert.github.io/blog/2014/03/31/ex00">
+  <link rel="canonical" href="http://cnDelbert.github.io/blog/2014/04/11/xml-relative">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Delbert's Octopress Blog" type="application/atom+xml">
@@ -69,7 +69,7 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32 &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Ex 0: 准备工作</h1>
+      <h1 class="entry-title">XML 相关的一点内容</h1>
     
     
       <p class="meta">
@@ -85,45 +85,54 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32 &hellip;">
   
 
 
-<time datetime="2014-03-31T22:15:50+08:00" pubdate data-updated="true">2014-Mar-31, 22:15:50, Monday</time>
+<time datetime="2014-04-11T20:11:01+08:00" pubdate data-updated="true">2014-Apr-11, 20:11:01, Friday</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。</p>
+<div class="entry-content"><p>想用 XML 来保存一点数据，因此在这边来作个笔记。</p>
 
 <!--more-->
 
 
-<h4>Windows 7 X64</h4>
-
-<pre><code>E:\SourceCode\GitHub&gt; ruby -v
-ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
-</code></pre>
-
-<p>我安装的是 1.9.3 版本的。</p>
-
-<p>同样，也可以运行 Ruby 命令行，可能 PowerShell 属于 bash 吧，退出方式是 Linux 的 <code>Ctrl+D</code>，而不是 <code>Ctrl+Z</code>。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>E:\SourceCode\GitHub&gt; irb
-</span><span class='line'>irb(main):001:0&gt; ^Z
-</span><span class='line'>=&gt; nil
-</span><span class='line'>irb(main):002:0* ^C
-</span><span class='line'>irb(main):002:0&gt;
-</span><span class='line'>E:\SourceCode\GitHub&gt; </span></code></pre></td></tr></table></div></figure>
+<ul>
+<li>XML 所有元素都<strong>必须</strong>有关闭标签。</li>
+</ul>
 
 
-<p>已经安装了 Vim 的，Notepad++ 也已经安装了 Vim 插件，不过还是用不惯。</p>
+<p>XML 声明不属于 XML 的部分，因此声明是没有关闭标签的。</p>
 
-<p>暑假就可以用 Mac OS 了，期待我的更新吧。</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>XML 标签是大小写敏感的。</li>
+<li>XML 标签<strong>必须</strong>正确嵌套。</li>
+<li>XML文档必须有根元素。</li>
+<li>XML 的属性<strong>必须</strong>加双引号。</li>
+<li><code>&lt;</code> 等要写成<code>&amp;lt;</code>。</li>
+<li>XML 中的空格会被保留，而不是像 HTML 一样合并为一个。</li>
+</ul>
+
+
+<p>XML 的命名应该遵循一些规则</p>
+
+<ul>
+<li>不能以标点或数字开头</li>
+<li>不能以xml/XML/Xml等开头</li>
+<li>不能包含空格</li>
+<li>尽量避免使用<code>.</code> <code>-</code> <code>:</code></li>
+<li>可是使用非英语字母，但是不建议使用。</li>
+</ul>
+
+
+<p>尽量使用元素，而要避免使用属性。属性仅仅用来描述与数据无关的信息，而用元素来处理信息。</p>
+
+<p>如果 XML 文件有错误，程序就会停止执行。</p>
 </div>
 
 
@@ -146,12 +155,12 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
   
 
 
-<time datetime="2014-03-31T22:15:50+08:00" pubdate data-updated="true">2014-Mar-31, 22:15:50, Monday</time>
+<time datetime="2014-04-11T20:11:01+08:00" pubdate data-updated="true">2014-Apr-11, 20:11:01, Friday</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/coding/'>Coding</a>
   
 </span>
 
@@ -167,10 +176,8 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/03/31/bullet-debug-assert/" title="Previous Post: Bullet Character Demo Assert">&laquo; Bullet Character Demo Assert</a>
+        <a class="basic-alignment left" href="/blog/2014/04/08/ruby-note-review-2/" title="Previous Post: Ruby 补充笔记 2">&laquo; Ruby 补充笔记 2</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/04/01/cannot-init-dk-dot-rb/" title="Next Post: Failure on 'ruby dk.rb init'">Failure on 'ruby dk.rb init' &raquo;</a>
       
     </p>
   </footer>
@@ -191,6 +198,14 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/11/xml-relative/">XML 相关的一点内容</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/08/ruby-note-review-2/">Ruby 补充笔记 2</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/08/ruby-note-review/">Ruby 补充笔记 1</a>
       </li>
     
@@ -200,14 +215,6 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
     
       <li class="post">
         <a href="/blog/2014/04/01/cannot-init-dk-dot-rb/">Failure on 'Ruby dk.rb Init'</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/31/ex00/">Ex 0: 准备工作</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/31/bullet-debug-assert/">Bullet Character Demo Assert</a>
       </li>
     
   </ul>
@@ -236,8 +243,8 @@ ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://cnDelbert.github.io/blog/2014/03/31/ex00/';
-        var disqus_url = 'http://cnDelbert.github.io/blog/2014/03/31/ex00/';
+        var disqus_identifier = 'http://cnDelbert.github.io/blog/2014/04/11/xml-relative/';
+        var disqus_url = 'http://cnDelbert.github.io/blog/2014/04/11/xml-relative/';
         var disqus_script = 'embed.js';
       
     (function () {

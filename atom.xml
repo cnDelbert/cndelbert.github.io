@@ -4,7 +4,7 @@
   <title><![CDATA[Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-08T16:39:21+08:00</updated>
+  <updated>2014-04-11T21:51:01+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -12,6 +12,89 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[XML 相关的一点内容]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/11/xml-relative/"/>
+    <updated>2014-04-11T20:11:01+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/11/xml-relative</id>
+    <content type="html"><![CDATA[<p>想用 XML 来保存一点数据，因此在这边来作个笔记。</p>
+
+<!--more-->
+
+
+<ul>
+<li>XML 所有元素都<strong>必须</strong>有关闭标签。</li>
+</ul>
+
+
+<p>XML 声明不属于 XML 的部分，因此声明是没有关闭标签的。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>XML 标签是大小写敏感的。</li>
+<li>XML 标签<strong>必须</strong>正确嵌套。</li>
+<li>XML文档必须有根元素。</li>
+<li>XML 的属性<strong>必须</strong>加双引号。</li>
+<li><code>&lt;</code> 等要写成<code>&amp;lt;</code>。</li>
+<li>XML 中的空格会被保留，而不是像 HTML 一样合并为一个。</li>
+</ul>
+
+
+<p>XML 的命名应该遵循一些规则</p>
+
+<ul>
+<li>不能以标点或数字开头</li>
+<li>不能以xml/XML/Xml等开头</li>
+<li>不能包含空格</li>
+<li>尽量避免使用<code>.</code> <code>-</code> <code>:</code></li>
+<li>可是使用非英语字母，但是不建议使用。</li>
+</ul>
+
+
+<p>尽量使用元素，而要避免使用属性。属性仅仅用来描述与数据无关的信息，而用元素来处理信息。</p>
+
+<p>如果 XML 文件有错误，程序就会停止执行。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby 补充笔记 2]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review-2/"/>
+    <updated>2014-04-08T21:11:59+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/08/ruby-note-review-2</id>
+    <content type="html"><![CDATA[<p>继续</p>
+
+<!--more-->
+
+
+<p>Ruby 中有以感叹号和问号结尾的方法。</p>
+
+<p>问号被用于判断返回 Boolean 是否为真的方法，如 <code>Array.empty?</code>。<br>
+叹号用来表示用到的方法要多加小心。一般不带叹号的方法返回调用该方法的一个拷贝，而带感叹号的则会修改原来的对象。</p>
+
+<p>可以通过 <code>Hash.new</code> 方法来建立新的空的 hash。</p>
+
+<p><code>.to_sym</code> 和 <code>.intern</code> 作用一样，都是讲字符串转换为 Symbol。</p>
+
+<p>Hash 中 key 如果本身是一个单词，可以直接用 <code>key: value</code> 的形式，如果是多个单词的话，就要 <code>:"key word" =&gt; value</code> 了。貌似是这样的。</p>
+
+<p>lrthw 中从来没有提到过 The Zen of Ruby。 Ruby 是一种很随意的语言，比如</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Delbert&quot;</span> <span class="k">if</span> <span class="kp">true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>和英语的读法差不多的杨泽，语法相当随意。</p>
+
+<p>加一个<code>@</code>是实例变量，两个@ <code>@@</code>是类变量，加<code>$</code>的是全局变量。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby 补充笔记 1]]></title>
@@ -166,8 +249,6 @@
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="mi">3</span><span class="o">.</span><span class="n">times</span><span class="p">{</span><span class="nb">print</span> <span class="s2">&quot;Delbert&quot;</span><span class="p">}</span> <span class="c1"># print &quot;Delbert&quot; out for 3 times{print</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-<h2>TBD</h2>
 ]]></content>
   </entry>
   
@@ -258,46 +339,6 @@
 <p>有必要的话，安装完 DevKit 再将环境变量添加回去。</p>
 
 <p><em>Delbert</em> 自己摸索了一下午试出来的……</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ex 0: 准备工作]]></title>
-    <link href="http://cnDelbert.github.io/blog/2014/03/31/ex00/"/>
-    <updated>2014-03-31T22:15:50+08:00</updated>
-    <id>http://cnDelbert.github.io/blog/2014/03/31/ex00</id>
-    <content type="html"><![CDATA[<p>由于安装 Octopress，应该是已经部署好了 Ruby 的环境了。我是在 Windows 7 X64 环境下操作的。</p>
-
-<!--more-->
-
-
-<h4>Windows 7 X64</h4>
-
-<pre><code>E:\SourceCode\GitHub&gt; ruby -v
-ruby 1.9.3p429 (2013-05-15) [i386-mingw32]
-</code></pre>
-
-<p>我安装的是 1.9.3 版本的。</p>
-
-<p>同样，也可以运行 Ruby 命令行，可能 PowerShell 属于 bash 吧，退出方式是 Linux 的 <code>Ctrl+D</code>，而不是 <code>Ctrl+Z</code>。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>E:\SourceCode\GitHub&gt; irb
-</span><span class='line'>irb(main):001:0&gt; ^Z
-</span><span class='line'>=&gt; nil
-</span><span class='line'>irb(main):002:0* ^C
-</span><span class='line'>irb(main):002:0&gt;
-</span><span class='line'>E:\SourceCode\GitHub&gt; </span></code></pre></td></tr></table></div></figure>
-
-
-<p>已经安装了 Vim 的，Notepad++ 也已经安装了 Vim 插件，不过还是用不惯。</p>
-
-<p>暑假就可以用 Mac OS 了，期待我的更新吧。</p>
 ]]></content>
   </entry>
   
