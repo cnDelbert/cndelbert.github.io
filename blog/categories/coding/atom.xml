@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Coding | Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-11T21:51:01+08:00</updated>
+  <updated>2014-04-24T14:32:53+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -54,6 +54,10 @@
 <p>尽量使用元素，而要避免使用属性。属性仅仅用来描述与数据无关的信息，而用元素来处理信息。</p>
 
 <p>如果 XML 文件有错误，程序就会停止执行。</p>
+
+<p>Notes:</p>
+
+<p>看完 XML 基础，还要记得看 DTD 和 XSLT。尽量不要用 CSS 来渲染 XML。最重要的是，能把整个 XML 给看完啊啊啊……</p>
 ]]></content>
   </entry>
   

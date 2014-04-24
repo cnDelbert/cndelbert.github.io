@@ -4,7 +4,7 @@
   <title><![CDATA[Delbert's Octopress Blog]]></title>
   <link href="http://cnDelbert.github.io/atom.xml" rel="self"/>
   <link href="http://cnDelbert.github.io/"/>
-  <updated>2014-04-11T21:51:01+08:00</updated>
+  <updated>2014-04-24T14:32:53+08:00</updated>
   <id>http://cnDelbert.github.io/</id>
   <author>
     <name><![CDATA[Delbert]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[骚扰电话]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/24/ad-calls/"/>
+    <updated>2014-04-24T14:26:53+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/24/ad-calls</id>
+    <content type="html"><![CDATA[<p>0531-58637290   山东  济南  商业银行贷款推广
+15519476562 贵州  六盘水</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D 建模中的一些概念]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/22/concepts-of-3d-modeling/"/>
+    <updated>2014-04-22T15:02:15+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/22/concepts-of-3d-modeling</id>
+    <content type="html"><![CDATA[<p>DTM</p>
+
+<p>DEM</p>
+
+<p>VPB</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[XML 相关的一点内容]]></title>
@@ -59,6 +82,10 @@
 <p>尽量使用元素，而要避免使用属性。属性仅仅用来描述与数据无关的信息，而用元素来处理信息。</p>
 
 <p>如果 XML 文件有错误，程序就会停止执行。</p>
+
+<p>Notes:</p>
+
+<p>看完 XML 基础，还要记得看 DTD 和 XSLT。尽量不要用 CSS 来渲染 XML。最重要的是，能把整个 XML 给看完啊啊啊……</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 3D | Delbert's Octopress Blog]]></title>
+  <link href="http://cnDelbert.github.io/blog/categories/3d/atom.xml" rel="self"/>
+  <link href="http://cnDelbert.github.io/"/>
+  <updated>2014-04-24T14:32:53+08:00</updated>
+  <id>http://cnDelbert.github.io/</id>
+  <author>
+    <name><![CDATA[Delbert]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[3D 建模中的一些概念]]></title>
+    <link href="http://cnDelbert.github.io/blog/2014/04/22/concepts-of-3d-modeling/"/>
+    <updated>2014-04-22T15:02:15+08:00</updated>
+    <id>http://cnDelbert.github.io/blog/2014/04/22/concepts-of-3d-modeling</id>
+    <content type="html"><![CDATA[<p>DTM</p>
+
+<p>DEM</p>
+
+<p>VPB</p>
+]]></content>
+  </entry>
+  
+</feed>
